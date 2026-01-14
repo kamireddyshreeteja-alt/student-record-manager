@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Manager</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, button { margin: 5px; padding: 5px; }
+        .pass { color: green; }
+        .fail { color: red; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Student Record Manager</h1>
+
+    <input type="text" id="nameInput" placeholder="Enter student name">
+    <input type="number" id="marksInput" placeholder="Enter marks">
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="analyzeResults()">Analyze Results</button>
+
+    <h2>Student List</h2>
+    <ul id="studentList"></ul>
+
+    <h2>Results</h2>
+    <p id="totalStudents">Total Students: 0</p>
+    <p id="passCount">Pass: 0</p>
+    <p id="failCount">Fail: 0</p>
+    <p id="averageMarks">Average marks: 0</p>
+    <p id="topper">Topper: N/A</p>
+
+    <h2>Marks Chart</h2>
+    <canvas id="marksChart" width="400" height="200"></canvas>
+
+    <script src="script!.js"></script>
+</body>
+</html>
